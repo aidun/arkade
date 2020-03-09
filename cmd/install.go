@@ -56,6 +56,7 @@ command.`,
 	command.AddCommand(apps.MakeInstallMongoDB())
 	command.AddCommand(apps.MakeInstallRegistry())
 	command.AddCommand(apps.MakeInstallRegistryIngress())
+	command.AddCommand(apps.MakeInstallGrafana())
 
 	command.AddCommand(MakeInfo())
 
@@ -81,5 +82,6 @@ func getApps() []string {
 		"mongodb",
 		"docker-registry",
 		"docker-registry-ingress",
+		"grafana",
 	}
 }
