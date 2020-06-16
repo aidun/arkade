@@ -110,6 +110,9 @@ arkade info --help`,
 		case "loki":
 			fmt.Printf("Info for app: %s\n", appName)
 			fmt.Println(apps.LokiInfoMsg)
+		case "redis":
+			fmt.Printf("Info for app: %s\n", appName)
+			fmt.Println(apps.RedisInfoMsg)
 		default:
 			return fmt.Errorf("no info available for app: %s", appName)
 		}
